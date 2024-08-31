@@ -1,0 +1,167 @@
+.blog {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 5vh;
+}
+
+.fs-1 {
+    font-size: 200px;
+}
+
+.img-custom {
+    height: 400px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.navbar-brand {
+    width: 200px;
+    height: 80px;
+}
+
+.card-body {
+    height: 378px;
+}
+
+.pb-sm-5 {
+    margin-bottom: 20px;
+}
+
+.pb-sm-4 {
+    margin-bottom: 30px;
+}
+
+.color {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.img-recensioni {
+    margin-top: 80px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: rgba(221, 26, 26, 0.753);
+}
+
+footer {
+    background-image: url(./media/poppy.jpg);
+    height: 50vh;
+    margin-top: 5%;
+}
+
+.bi {
+    color: white;
+    border-radius: 40%;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.luce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+
+.lucina {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: yellow;
+    animation-name: lucciola;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.shadow {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 0, 0.486);
+    border-radius: 50%;
+}
+
+@keyframes lucciola {
+    from {transform: rotate(0deg) translate(10px) rotate(0deg);}
+    to {transform: rotate(-360deg) translate(10px) rotate(360deg) translateX(220px)}
+}
+
+.simbionte {
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    transition: 1s;
+    position: relative;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    z-index: 2;
+    }
+
+.simbionte::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 40px;
+    top: 3px;
+    left: -10px;
+    background-image: linear-gradient(120deg, black, grey, white);
+    background-position: 0px 0px;
+    background-size: 200%;
+    transition: 1s;
+     z-index: -1;
+}
+
+.simbionte:hover::after {
+    width: 400%;
+    background-position: 200% 0px;
+}
+
+.fuoco {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: orange;
+    background-color: red;
+}
+
+.camion {
+    color: black;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: inline-block;
+    color: black;
+    transition: 0.4s;
+    position: relative;
+    margin-left: -15px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+}
+
+@keyframes move {
+    from {transform: translateX(0px)}
+    to {transform: translateX(220px)}
+}
+
+@media screen and (min-width: 576px){
+
+    .img-carousel {
+        height: 500px;
+    }
+}
